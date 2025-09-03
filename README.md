@@ -15,11 +15,23 @@
 Additional documentation can be found at the [Marlin Home Page](https://marlinfw.org/).
 Please test this firmware and let us know if it misbehaves in any way. Volunteers are standing by!
 
-## Marlin 2.1
+## Amaz_3D Marlin 2.1 version
 
 Marlin 2.1 continues to support both 32-bit ARM and 8-bit AVR boards while adding support for up to 9 coordinated axes and to up to 8 extruders.
 
 Download earlier versions of Marlin on the [Releases page](https://github.com/MarlinFirmware/Marlin/releases).
+
+This version of Marlin 2.1 has been written to work with Flying Bear Ghost 4S 3D printer, enabling some functions that were not possible with the stock firmware. 
+Changes include: 
+- LVGL UI;
+- Quick axis homing;
+- BLTouch activation to perform an auto bed leveling ubl procedure;
+- TMC2209 Standalone driver installed;
+- PID Control enabled, editable via Repetier Host and gcode commands;
+- Input Shaping enabled;
+- Linear Advance;
+
+The only feature that remains to be activated is the filament runout sensor since I have had some problems activating it without messing up anything else.
 
 ## Example Configurations
 
