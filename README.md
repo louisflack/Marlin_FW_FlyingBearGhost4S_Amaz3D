@@ -15,23 +15,37 @@
 Additional documentation can be found at the [Marlin Home Page](https://marlinfw.org/).
 Please test this firmware and let us know if it misbehaves in any way. Volunteers are standing by!
 
-## Amaz_3D Marlin 2.1 version
+## Amaz_3D Marlin 2.1 version and system setup
 
 Marlin 2.1 continues to support both 32-bit ARM and 8-bit AVR boards while adding support for up to 9 coordinated axes and to up to 8 extruders.
 
 Download earlier versions of Marlin on the [Releases page](https://github.com/MarlinFirmware/Marlin/releases).
 
-This version of Marlin 2.1 has been written to work with Flying Bear Ghost 4S 3D printer, enabling some functions that were not possible with the stock firmware. 
-Changes include: 
-- LVGL UI;
-- Quick axis homing;
-- BLTouch activation to perform an auto bed leveling ubl procedure;
-- TMC2209 Standalone driver installed;
-- PID Control enabled, editable via Repetier Host and gcode commands;
-- Input Shaping enabled;
-- Linear Advance;
+This customized version of **Marlin 2.1** has been configured specifically for the Flying Bear Ghost 4S 3D printer, unlocking several advanced features that are not available in the stock firmware.
 
-The only feature that remains to be activated is the filament runout sensor since I have had some problems activating it without messing up anything else.
+**Firmware enhancements include:**
+
+* Integrated **LVGL graphical user interface**
+* **Quick axis homing** for faster setup
+* **BLTouch support** with automated **UBL (Unified Bed Leveling)** procedure
+* **TMC2209 drivers** configured in standalone mode
+* **PID temperature control**, adjustable via Repetier Host or standard G-code commands
+* **Input Shaping** enabled to reduce vibration artifacts
+* **Linear Advance** enabled for improved extrusion accuracy
+
+The only remaining feature to be activated is the **filament runout sensor**, which has not yet been enabled due to previous conflicts affecting system stability.
+
+**Hardware modifications required for this configuration:**
+
+* Replacement motherboard: **Makerbase MKS Robin Nano V1.2**
+* Installed **BLTouch** bed-leveling probe
+* Installed **TMC2209** brushless motor drivers
+
+**Additional printer customizations:**
+
+* External **LED strip** with dedicated control button for improved illumination
+* **Direct-drive “Crab” conversion** (Thingiverse model: https://www.thingiverse.com/thing:4557724)
+
 
 ## Example Configurations
 
